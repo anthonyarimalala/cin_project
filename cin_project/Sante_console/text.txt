@@ -1,0 +1,38 @@
+j'ai ces classes:
+
+public class Info {
+    String allergie;
+}
+
+public class Antecedantt {
+    String antecedant;
+}
+
+public class Personne {
+    String cin;
+    String nom;
+    String prenom;
+    Date dateNaissance;
+    List<Info> Infos;
+    List<Antecedantt> Antecedants;
+}
+
+fais une fonction que transforme ce json en liste de personne en utilisant gson en prenant en compte la liste des infos et la liste des antecedants dans la classe:
+    [
+    {
+        "cin": "PERS0003",
+        "nom": "Johnson",
+        "prenom": "Robert",
+        "dateNaissance": "1978-12-10T00:00:00",
+        "infos": [
+            {
+                "allergie": "Pollen"
+            }
+        ],
+        "antecedants": [
+            {
+                "antecedant": "Asthme"
+            }
+        ]
+    }
+]
